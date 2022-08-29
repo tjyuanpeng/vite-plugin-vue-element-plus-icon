@@ -4,7 +4,7 @@ a vite plugin to load svg icon for element-plug
 
 ## Why
 
-Importing a svg file, in vite, you would get a url of file.
+Importing a svg file, you would get a url of file in vite
 
 In most cases, we want a Vue component to render in page directly.
 
