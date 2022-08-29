@@ -2,12 +2,48 @@
   "name": "vite-plugin-vue-element-plug-icon",
   "version": "1.0.0",
   "description": "a vite plugin to load svg icon for element-plug",
-  "main": "index.js",
+  "author": {
+    "name": "tjyuanpeng",
+    "email": "tjyuanpeng@gmail.com"
+  },
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preinstall": "npx only-allow pnpm",
+    "build": "tsup-node src/index.ts src/svgo-plugin-replace-fill.ts --dts --format esm,cjs --no-splitting --clean",
+    "dev": "npm run build -- --watch"
   },
   "engines": {
     "node": ">=14"
+  },
+  "peerDependencies": {
+    "vite": "^3.0.0",
+    "vue": "^3.2.13"
+  },
+  "dependencies": {
+    "svgo": "^2.8.0"
+  },
+  "devDependencies": {
+    "@types/svgo": "^2.6.4",
+    "prettier": "^2.7.1",
+    "tsup": "^6.2.3",
+    "typescript": "^4.8.2",
+    "vite": "^3.0.9",
+    "vue": "^3.2.37"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tjyuanpeng/vite-plugin-vue-element-plug-icon.git"
+  },
+  "homepage": "https://github.com/tjyuanpeng/vite-plugin-vue-element-plug-icon",
+  "bugs": {
+    "url": "https://github.com/tjyuanpeng/vite-plugin-vue-element-plug-icon/issues"
   },
   "keywords": [
     "vite",
@@ -17,7 +53,5 @@
     "icon",
     "svg",
     "vpvepi"
-  ],
-  "author": "yuanpeng@gmail.com",
-  "license": "MIT"
+  ]
 }

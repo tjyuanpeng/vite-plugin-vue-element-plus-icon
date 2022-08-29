@@ -19,7 +19,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-release
-.vscode/.debug.env
-config.json
