@@ -1,0 +1,23 @@
+{
+  "name": "vite-plugin-vue-element-plug-icon",
+  "version": "1.0.0",
+  "description": "a vite plugin to load svg icon for element-plug",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "vue",
+    "element-plus",
+    "icon",
+    "svg",
+    "vpvepi"
+  ],
+  "author": "yuanpeng@gmail.com",
+  "license": "MIT"
+}
