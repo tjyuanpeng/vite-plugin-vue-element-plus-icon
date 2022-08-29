@@ -16,10 +16,15 @@ So I create thie vite plugin to svg file, import as vue component, and optimize 
 
 ## Relative Resourece
 
-[element-plus icon](https://element-plus.org/en-US/component/container.html)
-[svgo](https://github.com/svg/svgo)
-[vite](https://vitejs.dev/)
-[vue](https://vuejs.org/)
+- [element-plus icon](https://element-plus.org/en-US/component/container.html)
+- [svgo](https://github.com/svg/svgo)
+- [vite](https://vitejs.dev/)
+- [vue](https://vuejs.org/)
+
+## Requirements
+
+- vite: ^3.0.0
+- vue: ^3.2.13
 
 ## Install
 
