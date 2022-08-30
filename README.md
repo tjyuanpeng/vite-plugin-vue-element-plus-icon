@@ -16,7 +16,7 @@ So I create thie vite plugin to svg file, import as vue component, and optimize 
 
 ## Relative Resourece
 
-- [element-plus icon](https://element-plus.org/en-US/component/container.html)
+- [element-plus icon](https://element-plus.org/en-US/component/icon.html)
 - [svgo](https://github.com/svg/svgo)
 - [vite](https://vitejs.dev/)
 - [vue](https://vuejs.org/)
