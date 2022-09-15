@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-vue-element-plug-icon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a vite plugin to load svg icon for element-plug",
   "author": {
     "name": "tjyuanpeng",
