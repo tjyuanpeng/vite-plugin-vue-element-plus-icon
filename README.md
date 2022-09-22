@@ -77,13 +77,15 @@ import CoffeeUrl from './coffee.svg?url'
 
 ## Query Options
 
-### url
+### component
 
-svg file will be imported as string
+default value
+
+svg file will be imported as Vue component, with optimized for element-plus
 
 ```ts
-import CoffeeUrl from './coffee.svg?url'
-// {{ CoffeeUrl }}
+import CoffeeComp from './coffee.svg?component'
+// <CoffeeComp />
 ```
 
 ### raw
@@ -95,7 +97,30 @@ import CoffeeRaw from './coffee.svg?raw'
 // <CoffeeRaw />
 ```
 
+### url
+
+svg file will be imported as file path
+
+```ts
+import CoffeeUrl from './coffee.svg?url'
+// {{ CoffeeUrl }}
+```
+
 ## Plugin Options
+
+### defaultQuery
+
+```ts
+import vpvepi from 'vite-plugin-vue-element-plug-icon'
+
+export default defineConfig({
+  plugins: [
+    vpvepi({
+      defaultQuery: 'raw', // component(default value), url, raw
+    }),
+  ],
+})
+```
 
 ### svgoConfig
 
