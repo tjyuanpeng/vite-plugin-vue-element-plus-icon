@@ -24,12 +24,13 @@ export const getDefaultSvgoOptions = (path?: string): OptimizeOptions => {
 }
 
 export interface Options {
-  svgoConfig?: (path: string) => OptimizeOptions
+  svgoConfig?: (path: string) => OptimizeOptions,
+  defaultQuery?: 'component' | 'url' | 'raw'
 }
 
 export default function vpvepi(options: Options = {}): Plugin {
   const svgRegex = /\.svg(\?(raw))?$/
-  const { svgoConfig } = options
+  const { svgoConfig, defaultQuery = 'component' } = options
 
   return {
     name: 'vite-plugin-vue-element-plus',
@@ -41,7 +42,8 @@ export default function vpvepi(options: Options = {}): Plugin {
       }
       const [path, query] = id.split('?', 2)
 
-      if (query === 'query') {
+      const queryType = query || defaultQuery
+      if (queryType === 'url') {
         return
       }
 
@@ -53,7 +55,7 @@ export default function vpvepi(options: Options = {}): Plugin {
         return
       }
 
-      if (query !== 'raw') {
+      if (queryType !== 'raw') {
         const result = optimize(
           svgFileContent,
           svgoConfig ? svgoConfig(path) : getDefaultSvgoOptions(path)
