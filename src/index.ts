@@ -29,7 +29,7 @@ export interface Options {
 }
 
 export default function vpvepi(options: Options = {}): Plugin {
-  const svgRegex = /\.svg(\?(raw))?$/
+  const svgRegex = /\.svg(\?(raw|component|url))?$/;
   const { svgoConfig, defaultQuery = 'component' } = options
 
   return {
