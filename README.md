@@ -1,6 +1,6 @@
 # vite-plugin-vue-element-plus-icon
 
-a vite plugin to load svg icon for element-plug
+a vite plugin to load svg icon for element-plus
 
 ## Why
 
@@ -12,7 +12,7 @@ In element-plus, it supply a `el-icon` Element, and a built-in Svg resource libr
 
 Use your svg file, it`s not render properly, such as not supporting color attribute
 
-So I create thie vite plugin to svg file, import as vue component, and optimize using for element-plug icon
+So I create thie vite plugin to svg file, import as vue component, and optimize using for element-plus icon
 
 ## Relative Resourece
 
