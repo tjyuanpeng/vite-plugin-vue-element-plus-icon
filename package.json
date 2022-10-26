@@ -1,7 +1,7 @@
 {
-  "name": "vite-plugin-vue-element-plug-icon",
-  "version": "1.0.3",
-  "description": "a vite plugin to load svg icon for element-plug",
+  "name": "vite-plugin-vue-element-plus-icon",
+  "version": "1.0.4",
+  "description": "a vite plugin to load svg icon for element-plus",
   "author": {
     "name": "tjyuanpeng",
     "email": "tjyuanpeng@gmail.com"
@@ -46,11 +46,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tjyuanpeng/vite-plugin-vue-element-plug-icon.git"
+    "url": "git+https://github.com/tjyuanpeng/vite-plugin-vue-element-plus-icon.git"
   },
-  "homepage": "https://github.com/tjyuanpeng/vite-plugin-vue-element-plug-icon",
+  "homepage": "https://github.com/tjyuanpeng/vite-plugin-vue-element-plus-icon",
   "bugs": {
-    "url": "https://github.com/tjyuanpeng/vite-plugin-vue-element-plug-icon/issues"
+    "url": "https://github.com/tjyuanpeng/vite-plugin-vue-element-plus-icon/issues"
   },
   "keywords": [
     "vite",

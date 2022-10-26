@@ -51,7 +51,7 @@ export default function vpvepi(options: Options = {}): Plugin {
       try {
         svgFileContent = await readFile(path, 'utf-8')
       } catch (e) {
-        console.warn(`#vite-plugin-vue-element-plug-icon: [${path}] couldn't be read.`, e)
+        console.warn(`#vite-plugin-vue-element-plus-icon: [${path}] couldn't be read.`, e)
         return
       }
 
@@ -62,7 +62,7 @@ export default function vpvepi(options: Options = {}): Plugin {
         )
         if (result.error) {
           console.warn(
-            `#vite-plugin-vue-element-plug-icon: [${path}] couldn't be handled by svgo.`,
+            `#vite-plugin-vue-element-plus-icon: [${path}] couldn't be handled by svgo.`,
             result.error
           )
           return

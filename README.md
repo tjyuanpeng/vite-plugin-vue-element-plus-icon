@@ -1,4 +1,4 @@
-# vite-plugin-vue-element-plug-icon
+# vite-plugin-vue-element-plus-icon
 
 a vite plugin to load svg icon for element-plug
 
@@ -30,13 +30,13 @@ So I create thie vite plugin to svg file, import as vue component, and optimize 
 
 ```bash
 // pnpm
-pnpm add vite-plugin-vue-element-plug-icon -D
+pnpm add vite-plugin-vue-element-plus-icon -D
 
 // npm
-npm install vite-plugin-vue-element-plug-icon -D
+npm install vite-plugin-vue-element-plus-icon -D
 
 // yarn
-yarn add vite-plugin-vue-element-plug-icon --D
+yarn add vite-plugin-vue-element-plus-icon --D
 ```
 
 ## Setup
@@ -44,7 +44,7 @@ yarn add vite-plugin-vue-element-plug-icon --D
 #### `vite.config.ts`
 
 ```ts
-import vpvepi from 'vite-plugin-vue-element-plug-icon'
+import vpvepi from 'vite-plugin-vue-element-plus-icon'
 
 export default defineConfig({
   plugins: [vpvepi()],
@@ -111,7 +111,7 @@ import CoffeeUrl from './coffee.svg?url'
 ### defaultQuery
 
 ```ts
-import vpvepi from 'vite-plugin-vue-element-plug-icon'
+import vpvepi from 'vite-plugin-vue-element-plus-icon'
 
 export default defineConfig({
   plugins: [
@@ -125,7 +125,7 @@ export default defineConfig({
 ### svgoConfig
 
 ```ts
-import vpvepi from 'vite-plugin-vue-element-plug-icon'
+import vpvepi from 'vite-plugin-vue-element-plus-icon'
 
 export default defineConfig({
   plugins: [
@@ -144,7 +144,7 @@ export default defineConfig({
 use `getDefaultSvgoOptions` to get default svgo options, you can merge options from the return value
 
 ```ts
-import vpvepi, { getDefaultSvgoOptions } from 'vite-plugin-vue-element-plug-icon'
+import vpvepi, { getDefaultSvgoOptions } from 'vite-plugin-vue-element-plus-icon'
 
 export default defineConfig({
   plugins: [
@@ -169,7 +169,7 @@ you can use svg plugin `svgo-plugin-replace-fill` separately
 it would replace `fill` attr directly
 
 ```ts
-import sprf from 'vite-plugin-vue-element-plug-icon/dist/svgo-plugin-replace-fill.cjs'
+import sprf from 'vite-plugin-vue-element-plus-icon/dist/svgo-plugin-replace-fill.cjs'
 
 vpvepi({
   svgoConfig() {
