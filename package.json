@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-vue-element-plus-icon",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "a vite plugin to load svg icon for element-plus",
   "author": {
     "name": "tjyuanpeng",
